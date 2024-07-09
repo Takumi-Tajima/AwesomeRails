@@ -6,6 +6,7 @@ gem 'rails', '~> 7.1.3', '>= 7.1.3.3'
 
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
+gem 'devise'
 gem 'haml-rails'
 gem 'jsbundling-rails'
 gem 'omniauth'
@@ -23,6 +24,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'bullet'
   gem 'debug'
+  gem 'dotenv'
   gem 'rubocop', require: false
   gem 'sgcop', github: 'SonicGarden/sgcop'
 end
