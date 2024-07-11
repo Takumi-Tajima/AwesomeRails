@@ -1,3 +1,3 @@
 %div
-  %h1.font-bold.text-4xl Homes#index
-  %p Find me in app/views/homes/index.html.erb
+  %p 下記のボタンを押してログインしてください
+  = button_to 'GitHubでログインする', user_github_omniauth_authorize_path, class: 'btn', data: { turbo: false }
