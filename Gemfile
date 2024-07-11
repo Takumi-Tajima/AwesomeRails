@@ -25,7 +25,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'bullet'
   gem 'debug'
-  gem 'dotenv'
+  gem 'dotenv-rails'
   gem 'rubocop', require: false
   gem 'sgcop', github: 'SonicGarden/sgcop'
 end
