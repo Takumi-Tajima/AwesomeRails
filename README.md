@@ -1,3 +1,8 @@
+### 完成系
+
+https://github.com/perfect-ruby-on-rails/awesome_events
+
+
 ### イベント告知アプリケーション
 
 - パーフェクトruby on Railsに乗っているやつ
