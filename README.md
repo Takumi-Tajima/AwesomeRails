@@ -1,24 +1,41 @@
-# README
+### イベント告知アプリケーション
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- パーフェクトruby on Railsに乗っているやつ
 
-Things you may want to cover:
+### 仕様
 
-* Ruby version
+- ユーザーは作成されたイベント情報を閲覧することができる
+    - 開始時間あり
+    - 開始時間が現在時刻を過ぎていて、開始時刻が早い順で表示される？
+    - 10件のたびにページネーションする
+    - キーワードでイベントを検索して絞り込める
+- ユーザーはGithubアカウントでログインできる
+- ログインしたユーザーはイベント作成できる
+- イベント情報
+    - イベント名 50文字以内
+    - 開始時間
+    - 終了時間
+    - イベント詳細2000文字以内
+    - 参加者一覧で全てのユーザーを閲覧できる
+- ユーザーは自分が作成したイベントであれば、それを削除できる
+- ログインしたユーザーは作成されたイベントに参加できる
+    - イベントに参加するときは30文字以内でコメントをつける
+    - ログインしたユーザーはイベントの参加をキャンセルできる
+- ログインしたユーザーは退会することができる
+    - ただし、回連する未開催のイベントがない存在しない時に限る
+    - 退会したユーザーの情報は削除される
+    - 退会したユーザーが作成したイベントはそのまま残る
+    - イベントを作成したユーザーが退会している場合、作成したユーザーの情報として「退会したユーザーです」というコメントが表示される
+    - イベントに参加したユーザーが退会している場合、参加したユーザーの情報として「退会したユーザーです」というコメントが表示される
 
-* System dependencies
+フロントで使ってみたい技術
 
-* Configuration
+- Hotwire
+- TailWind css
+- あとなんかJSで動きつける系
 
-* Database creation
+### やったこと
 
-* Database initialization
+---
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails new -j esbuild — css tailwind --database=postgresql --database=postgresql --skip-jbuilder --skip-action-mailbox --skip-test --skip-action-text
