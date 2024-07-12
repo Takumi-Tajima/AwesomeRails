@@ -35,8 +35,11 @@ https://github.com/perfect-ruby-on-rails/awesome_events
 
 フロントで使ってみたい技術
 
-- Hotwire
 - TailWind css
+
+可能であれば
+
+- Hotwire
 - あとなんかJSで動きつける系
 
 ### やったこと
