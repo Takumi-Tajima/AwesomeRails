@@ -12,5 +12,8 @@
   %body
     .container.mx-auto
       = render 'layouts/header'
+      - if flash.notice 
+        %alert.alert-success
+          = flash.notice
       .py-7
         = yield

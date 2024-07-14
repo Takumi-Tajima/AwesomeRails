@@ -1,10 +1,13 @@
 
 %h1.h2 Wellcome!!
 
+= button_to 'ログアウト', destroy_user_session_path, class: 'btn', method: :delete, data: { turbo: false }
+= button_to 'GitHubでログインする', user_github_omniauth_authorize_path, class: 'btn btn-primary', data: { turbo: false }
+
 - if user_signed_in?
+  %p sign inしてます
 - else
-  = button_to 'ログアウト', destroy_user_session_path, class: 'btn', method: :delete, data: { turbo: false }
-  = button_to 'GitHubでログインする', user_github_omniauth_authorize_path, class: 'btn btn-primary', data: { turbo: false }
+  %p sign inしてないです
 
 -# - if user_signed_in?のメソッドが効いてないようだ〜なぜだ
   そもそもサインインができてない
