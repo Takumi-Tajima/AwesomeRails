@@ -1,4 +1,6 @@
-
 %h1.h2 Wellcome!!
 
-= button_to 'GitHubでログインする', user_github_omniauth_authorize_path, class: 'btn', data: { turbo: false }
+- if user_signed_in?
+  = button_to 'ログアウト', destroy_user_session_path, class: 'btn', method: :delete, data: { turbo: false }
+- else
+  = button_to 'GitHubでログインする', user_github_omniauth_authorize_path, class: 'btn btn-primary', data: { turbo: false }
